@@ -31,6 +31,7 @@ public class SbppoitmentApplication {
 			else
 			{
 				System.out.println("Admin already exists");
+				
 			}
 		};
 	 }
