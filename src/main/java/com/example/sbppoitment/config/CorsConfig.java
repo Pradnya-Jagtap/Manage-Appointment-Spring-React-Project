@@ -21,7 +21,8 @@ public class CorsConfig {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
-				.allowedOrigins("http://localhost:3000")
+				.allowedOrigins("https://manage-appointment-spring-react-project-frontend-69jnfk0l5.vercel.app")
+				//("http://localhost:3000")
 				.allowedMethods("*")
 				.allowCredentials(true);
 			}
@@ -33,7 +34,7 @@ public class CorsConfig {
     public CorsConfigurationSource corsConfigurationSource() {
 
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:3000"));
+        configuration.setAllowedOrigins(List.of("https://manage-appointment-spring-react-project-frontend-69jnfk0l5.vercel.app"));
         configuration.setAllowedMethods(List.of("*"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
